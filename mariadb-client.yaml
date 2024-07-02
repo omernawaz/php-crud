@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mariadb-client
+spec:
+  containers:
+  - name: mariadb-client
+    image: mysql:latest
+    command: ["sleep"]
+    args: ["3600"]
+  restartPolicy: Never
